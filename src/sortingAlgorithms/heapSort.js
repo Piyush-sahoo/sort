@@ -36,7 +36,7 @@ export function getHeapSortAnimations(array) {
     if (largest !== i) {
       animations.push([i, largest, true]); 
       swap(array, i, largest);
-      animations.push([i, largest, true]); // Reset color
+      animations.push([i, largest, true]); 
       heapify(array, n, largest, animations);
     }
   }
